@@ -10,7 +10,7 @@ class MP3Importer
   end 
   
   def import 
-    Song.new_from_filename(path)
+    Song.new_by_filename(path)
   end 
   
 end 
