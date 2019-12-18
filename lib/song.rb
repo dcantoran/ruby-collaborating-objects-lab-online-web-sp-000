@@ -15,4 +15,17 @@ class Song
     @@all
   end 
   
+  def self.new_by_filename
+    
+  end 
+  
+  def artist_name=(name)
+    self.find_or_create_by_name(name )
+  end 
+  
 end 
+
+
+
+
+
