@@ -5,8 +5,8 @@ class MP3Importer
   end 
   
   def files 
-    Dir.entries(@path).uniq
-    binding.pry
+    Dir.entries(@path).uniq.delete_if {|ele| ele.size < 3}
+    # binding.pry
   end 
   
 end 
