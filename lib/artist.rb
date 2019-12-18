@@ -30,7 +30,7 @@ class Artist
       if self.all.detect {|artist| artist.name == artist_name} 
         self.all.detect {|artist| artist.name == artist_name} 
       else 
-        Artist.new(artist_name).save
+        Artist.new(artist_name)
       end 
   end 
   
