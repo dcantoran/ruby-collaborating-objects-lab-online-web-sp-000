@@ -31,6 +31,7 @@ class Artist
   
   def print_songs
     @@all.artist.song
+    binding.pry
   end 
   
 end 
