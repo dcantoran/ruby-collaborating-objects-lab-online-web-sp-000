@@ -29,6 +29,10 @@ class Artist
     @@all.find {|artist| artist.name == artist_name} || Artist.new(artist_name)
   end 
   
+  def print_songs
+    self.all
+  end 
+  
 end 
 
 
