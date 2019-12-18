@@ -5,7 +5,7 @@ class MP3Importer
   end 
   
   def files 
-    Dir.entries(@path).uniq.delete_if {|ele| ele.size < 3}
+    Dir.entries(@path).uniq.select {|file| file.include?(".mp3")}
     # binding.pry
   end 
   
